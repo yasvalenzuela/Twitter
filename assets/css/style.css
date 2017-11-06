@@ -196,3 +196,12 @@ span .fa-search{
 	outline: 1px solid #DFC1E6;
 	background-color: #ffffff;
 }
+
+/*contador de forma regresiva*/
+#contCharacter{
+	font-size: 20px;
+	color: #7D8A99;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
