@@ -1,0 +1,198 @@
+body {
+	/*background-color: #E6ECF0;*/
+	background-image: url(../../images/fondo.jpg);
+	font-family: "Segoe UI",Arial,sans-serif;
+	background-repeat: no-repeat;
+	/*width: 100%;*/
+	height: auto;
+	background-size: cover;
+	background-position: 0 -220px;
+}
+
+header {
+	position: fixed;
+	background-color: #ffffff;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 50px;
+}
+/*estilos de menu de header*/
+.menu {
+	width: 350px;
+}
+.menu li {
+	color: #9AA5AF;
+	list-style: none;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: -10px;
+}
+
+.menu li:first-child{
+	color: #80099E;
+	margin-left: 50px;
+}
+
+.menu i {
+	padding: 5px;
+	font-size: 20px;
+}
+
+/*estilo icono de twitter*/
+span .fa-twitter{
+	color: #1DA1F2;
+	position: absolute;
+	font-size: 25px;
+	top: 17px;
+	margin-left: 650px;
+	display: inline-block;
+}
+
+/*barra buscador*/
+#search{
+	border: 1px solid #F5F8FA;
+	border-radius: 50px;
+	position: absolute;
+	left: 850px;
+	top: 7px;
+	width: 210px;
+	padding: 10px;
+	color: #AEB8C1;
+}
+
+/*lupa*/
+span .fa-search{
+	position: absolute;
+	color: #66757F;
+	font-size: 19px;
+	left: 1055px;
+	top: 17px;
+}
+
+/*foto de perfil de header*/
+.photo img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	top: 10px;
+	left: 1100px;
+}
+
+/*boton de header*/
+.photo #btn{
+	position: absolute;
+	top: 7px;
+	left: 1150px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	background-color: #8F27AA;
+	color: #ffffff;
+	padding: 10px 15px;
+	font-size: 15px;
+	font-weight: 600;
+}
+/*seccion contenedora de datos de ususario*/
+#container{
+	margin-top: 50px;
+	margin-left: 80px;
+	width: 300px;
+	height: auto;
+	background-color: #ffffff;
+	float: left;
+}
+
+#portada img{
+	width: 300px;
+	height: 50%;
+} 
+#perfil img{
+	width: 75px;
+	height: 75px;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	z-index: 10;
+	margin-top: -35px;
+	margin-left: 10px;
+}
+
+#container h2{
+	margin-top: -50px;
+	margin-left: 105px;
+	font-size: 18px;
+	color: #14171a;
+	line-height: 25px;
+
+}
+
+#container h3{
+	margin-top: -23px;
+	margin-left: 107px;
+	font-size: 14px;
+	color: #9AA5AF;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+#container p{
+	margin-top: 20px;
+	margin-left: 30px;
+	color: #14171a;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/*seccion formulario*/
+#contDos{
+	background-color: #F2E6F5;
+	/*background-color: yellow;*/
+	width: 600px;
+	height: auto;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+}
+
+#twit{
+	font-size: 15px;
+	width: 580px;
+	height: auto;
+	border: 1px solid #DFC1E6;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	resize: none;
+}
+
+#contDos #boton{
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	background-color: #8F27AA;
+	color: #ffffff;
+	padding: 10px 15px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+/*contenedor de comentarios*/
+#cont {
+	text-align: left;
+	width: 500px;
+	height: auto;
+	color: #535658;
+}
+#cont div {
+	width: 580px;
+	height: auto; 
+	margin-top: 10px;
+	padding: 16px 10px;
+	margin-bottom: 10px;
+	outline: 1px solid #DFC1E6;
+	background-color: #ffffff;
+}
