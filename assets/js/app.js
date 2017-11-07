@@ -12,7 +12,7 @@ comentario.addEventListener('keyup', function(){
 	maxCharacter = 140 - contador;
 	//para que aparezca en el html
 	document.getElementById('contCharacter').innerHTML=maxCharacter;
-
+	//condiciones que se tiene que cumplir para habilitar o deshabilitar el boton y que cambie de color el contador
 	if (contador >=1) {
 		document.getElementById('boton').disabled=false;
 	}
@@ -26,7 +26,6 @@ comentario.addEventListener('keyup', function(){
 		document.getElementById('contCharacter').style.color = "red";
 	}
 
-	
 })
 
 	
@@ -40,8 +39,10 @@ boton.addEventListener('click', function(){
 	var cont = document.getElementById('cont');
 	//el div que contiene cada comentario
 	var nuevoComentario = document.createElement('div');
-		
+
+	//creo un nodo tipo texto	
 	var textoNuevoComentario = document.createTextNode(comentario);
+	//creo un parrafo
 	var elementoContenedor = document.createElement('p');
 	elementoContenedor.appendChild(textoNuevoComentario);
 	nuevoComentario.appendChild(elementoContenedor);
@@ -49,7 +50,23 @@ boton.addEventListener('click', function(){
 	cont.appendChild(nuevoComentario);
 })
 
+//para que textarea crezca de acuerdo al tamaño del texto
+var textarea = document.querySelector('textarea');
+//se crea un evento 
+textarea.addEventListener('keydown', function autosize(){
+	var size = this;
+	//setTimeout se ejecute dentro de un período de tiempo determinado
+	setTimeout(function(){
+	  	size.style.cssText = 'height:auto; padding:2';
+	  	//scrollHeight devuelve la altura completa de un elemento en píxeles, incluido el relleno, pero no el borde, 
+	  	//la barra de desplazamiento o el margen.
+    	size.style.cssText = 'height:' + size.scrollHeight + 'px';
+  	},0);
 
+})
+
+//Las propiedades scrollWidth y scrollHeight devuelven la altura y el ancho completos de un elemento, 
+//incluidos el alto y el ancho que no se pueden ver (debido al desbordamiento).         
 /*
 var textarea = document.getElementsByTagName(textarea).value;
 textarea.addEventListener('onkeyup', function(){
