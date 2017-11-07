@@ -16,11 +16,20 @@ comentario.addEventListener('keyup', function(){
 	if (contador >=1) {
 		document.getElementById('boton').disabled=false;
 	}
-	if (contador ==0) {
+	if (contador ===0 || contador > 140) {
 		document.getElementById('boton').disabled=true;
 	}
+	if(contador >= 120 && contador< 130){
+		document.getElementById('contCharacter').style.color = "yellow";
+	}
+	if (contador >= 130 && contador<= 140) {
+		document.getElementById('contCharacter').style.color = "red";
+	}
+
+	
 })
 
+	
 var boton = document.getElementById('boton');
 boton.addEventListener('click', function(){
 	//texto ingresado
